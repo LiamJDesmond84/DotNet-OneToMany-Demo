@@ -1,4 +1,5 @@
 using DotNet_OneToMany_Demo.Models;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
