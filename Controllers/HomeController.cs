@@ -9,9 +9,9 @@ public class HomeController : Controller
 
     private static AppDbContext _context;
 
-    public HomeController(AppDbContext DBContext)
+    public HomeController(AppDbContext context)
     {
-        _context = DBContext;
+        _context = context;
     }
 
     [HttpGet("")]
