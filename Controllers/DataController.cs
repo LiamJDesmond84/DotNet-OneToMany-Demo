@@ -874,7 +874,7 @@ namespace DotNet_OneToMany_Demo.Controllers
             foreach (string l in leagues)
             {
                 string[] info = l.Split(",");
-                context.Leagues.Add(
+                _context.Leagues.Add(
                     new League()
                     {
                         Name = info[0],
@@ -882,12 +882,12 @@ namespace DotNet_OneToMany_Demo.Controllers
                     }
                 );
             }
-            context.SaveChanges();
+            _context.SaveChanges();
             // Create all of the Teams
             foreach (string t in teams)
             {
                 string[] info = t.Split(",");
-                context.Teams.Add(
+                _context.Teams.Add(
                     new Team()
                     {
                         Location = info[0],
@@ -896,12 +896,12 @@ namespace DotNet_OneToMany_Demo.Controllers
                     }
                 );
             }
-            context.SaveChanges();
+            _context.SaveChanges();
             // Create all of the Players
             foreach (string p in players)
             {
                 string[] info = p.Split(",");
-                context.Players.Add(
+                _context.Players.Add(
                     new Player()
                     {
                         FirstName = info[0],
@@ -910,12 +910,12 @@ namespace DotNet_OneToMany_Demo.Controllers
                     }
                 );
             }
-            context.SaveChanges();
+            _context.SaveChanges();
             // Create the Player - Team relationships
             foreach (string t in teamplayers)
             {
                 string[] info = t.Split(",");
-                context.PlayerTeams.Add(
+                _context.PlayerTeams.Add(
                     new PlayerTeam()
                     {
                         TeamId = Int32.Parse(info[0]),
@@ -923,7 +923,7 @@ namespace DotNet_OneToMany_Demo.Controllers
                     }
                 );
             }
-            context.SaveChanges();
+            _context.SaveChanges();
             return Redirect("/");
         }
     }
