@@ -1,0 +1,8 @@
+C:\Users\liamj\Documents\GitRepos\DotNet-OneToMany-Demo\obj\Debug\net7.0\DotNet-OneToMany-Demo.csproj.AssemblyReference.cache
+C:\Users\liamj\Documents\GitRepos\DotNet-OneToMany-Demo\obj\Debug\net7.0\DotNet-OneToMany-Demo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\liamj\Documents\GitRepos\DotNet-OneToMany-Demo\obj\Debug\net7.0\DotNet-OneToMany-Demo.AssemblyInfoInputs.cache
+C:\Users\liamj\Documents\GitRepos\DotNet-OneToMany-Demo\obj\Debug\net7.0\DotNet-OneToMany-Demo.AssemblyInfo.cs
+C:\Users\liamj\Documents\GitRepos\DotNet-OneToMany-Demo\obj\Debug\net7.0\DotNet-OneToMany-Demo.csproj.CoreCompileInputs.cache
+C:\Users\liamj\Documents\GitRepos\DotNet-OneToMany-Demo\obj\Debug\net7.0\DotNet-OneToMany-Demo.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\liamj\Documents\GitRepos\DotNet-OneToMany-Demo\obj\Debug\net7.0\DotNet-OneToMany-Demo.RazorAssemblyInfo.cache
+C:\Users\liamj\Documents\GitRepos\DotNet-OneToMany-Demo\obj\Debug\net7.0\DotNet-OneToMany-Demo.RazorAssemblyInfo.cs

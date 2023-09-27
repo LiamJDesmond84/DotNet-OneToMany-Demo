@@ -7,9 +7,9 @@ namespace DotNet_OneToMany_Demo.Controllers
     {
         private static AppDbContext _context;
 
-        public DataController(AppDbContext DBContext)
+        public DataController(AppDbContext context)
         {
-            _context = DBContext;
+            _context = context;
         }
 
         private static string[] leagues = {
