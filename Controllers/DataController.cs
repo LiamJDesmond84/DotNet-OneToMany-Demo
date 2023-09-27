@@ -5,11 +5,11 @@ namespace DotNet_OneToMany_Demo.Controllers
 {
     public class DataController : Controller
     {
-        private static Context context;
+        private static AppDbContext _context;
 
-        public DataController(Context DBContext)
+        public DataController(AppDbContext DBContext)
         {
-            context = DBContext;
+            _context = DBContext;
         }
 
         private static string[] leagues = {
