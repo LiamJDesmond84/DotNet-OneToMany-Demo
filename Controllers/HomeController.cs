@@ -28,7 +28,9 @@ public class HomeController : Controller
     {
         ViewBag.Leagues = _context.Leagues.Where(x => x.Name.Contains("Women")).ToList();
 
-        //Debug.WriteLine(ViewBag.Leagues);
+        var test = _context.Leagues.Where(x => x.Name.Contains("Women")).ToList();
+
+        Debug.WriteLine(test);
         ViewBag.Hockey = _context.Leagues.Where(x => x.Sport.Contains("Hockey")).ToList();
         ViewBag.NotFootball = _context.Leagues.Where(x => !x.Sport.Contains("Football")).ToList();
         ViewBag.Conferences = _context.Leagues.Where(x => x.Name.Contains("Conference")).ToList();
