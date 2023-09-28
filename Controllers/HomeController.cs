@@ -7,7 +7,7 @@ namespace DotNet_OneToMany_Demo.Controllers;
 public class HomeController : Controller
 {
 
-    private static AppDbContext _context;
+    private AppDbContext _context;
 
     public HomeController(AppDbContext context)
     {
