@@ -59,4 +59,27 @@
             </div>
         </div>
     </div>
+
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h3>International Collegiate Baseball Conference Players</h3>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Team Id</th>
+                        <th>Team Name</th>
+                        <th>League Id</th>
+                    </tr>
+                    @foreach (var x in ViewBag.International)
+                    {
+                        <tr>
+                            <td>@x.PlayerId</td>
+                            <td>@x.FirstName</td>
+                            <td>@x.LastName</td>
+                        </tr>
+                    }
+                </table>
+            </div>
+        </div>
+    </div>
 </div>
