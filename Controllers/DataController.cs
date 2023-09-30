@@ -1,6 +1,7 @@
 ﻿using DotNet_OneToMany_Demo.Models;
 using Microsoft.AspNetCore.Mvc;
 
+
 namespace DotNet_OneToMany_Demo.Controllers
 {
     public class DataController : Controller
