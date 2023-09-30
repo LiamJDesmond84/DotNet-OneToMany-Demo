@@ -10,11 +10,8 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlite("Data S
 
 
 
-
 //var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("ConnectionString");
-//builder.Services.AddDbContext<AppDbContext>(options => options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
-var client = new AppDbContext(new DbContextOptions<AppDbContext>());
-client.Database.EnsureCreated();
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("connectionString")));
 
 builder.Services.AddMvc(options => options.EnableEndpointRouting = false);
 
