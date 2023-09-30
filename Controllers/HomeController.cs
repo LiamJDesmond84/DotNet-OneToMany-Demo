@@ -45,6 +45,8 @@ public class HomeController : Controller
     [HttpGet("level_2")]
     public IActionResult Level2()
     {
+
+        ViewBag.Dallas = _context.Teams.Where(x => x.Location.Contains("Dallas")).ToList();
         return View();
     }
 
