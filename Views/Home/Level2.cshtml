@@ -13,4 +13,27 @@
             <li>...everyone with the last name "Flores" who DOESN'T (currently) play for the Washington Roughriders</li>
         </ol>
     </div>
+
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h3>Women's'</h3>
+                <table class="table table-striped">
+                    <tr>
+                        <th>League Id</th>
+                        <th>League Name</th>
+                        <th>League Sport</th>
+                    </tr>
+                    @foreach (var x in ViewBag.Atlantic)
+                    {
+                        <tr>
+                            <td>@x.TeamId</td>
+                            <td>@x.TeamName</td>
+                            <td>@x.LeagueId</td>
+                        </tr>
+                    }
+                </table>
+            </div>
+        </div>
+    </div>
 </div>
