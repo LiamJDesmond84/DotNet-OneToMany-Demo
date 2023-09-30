@@ -49,6 +49,7 @@ public class HomeController : Controller
         ViewBag.Atlantic = _context.Teams.Where(x => x.CurrLeague.Name.Contains("Atlantic")).ToList();
         ViewBag.Penguins = _context.Players.Where(x => x.CurrentTeam.Location.Contains("Boston")).ToList();
         ViewBag.International = _context.Players.Where(x => x.CurrentTeam.CurrLeague.Name.Contains("Collegiate")).ToList();
+        ViewBag.Lopez = _context.Players.Where(x => x.CurrentTeam.CurrLeague.Name.Contains("Amateur Football")).Where(x => x.LastName.Contains("Lopez")).ToList();
         return View();
     }
 
