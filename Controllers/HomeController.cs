@@ -46,7 +46,7 @@ public class HomeController : Controller
     public IActionResult Level2()
     {
 
-        ViewBag.Dallas = _context.Teams.Where(x => x.Location.Contains("Dallas")).ToList();
+        ViewBag.Dallas = _context.Teams.Where(x => x.CurrLeague.Contains("Dallas")).ToList();
         return View();
     }
 
