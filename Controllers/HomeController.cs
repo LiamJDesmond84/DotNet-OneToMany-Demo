@@ -53,7 +53,7 @@ public class HomeController : Controller
         ViewBag.AllFootball = _context.Players.Where(x => x.CurrentTeam.CurrLeague.Sport.Contains("Football")).ToList();
 
         ViewBag.TeamSophia = _context.Teams.Where(x => x.CurrentPlayers.Any(x => x.FirstName.Contains("Sophia"))).ToList();
-        ViewBag.LeagueSophia = _context.Leagues.Where(x => x.Teams.Any((x => x.CurrentPlayers.Any(x => x.FirstName.Contains("Sophia"))));
+        ViewBag.LeagueSophia = _context.Leagues.Where(x => x.Teams.Any((x => x.CurrentPlayers.Any(x => x.FirstName.Contains("Sophia"))))).ToList();
 
 
 
