@@ -137,14 +137,14 @@
                     <tr>
                         <th>Team Id</th>
                         <th>Team Name</th>
-                        <th>League Id</th>
+                        <th>Location</th>
                     </tr>
                     @foreach (var x in ViewBag.TeamSophia)
                     {
                         <tr>
                             <td>@x.TeamId</td>
-                            <td>@x.FirstName</td>
-                            <td>@x.LastName</td>
+                            <td>@x.TeamName</td>
+                            <td>@x.Location</td>
                         </tr>
                     }
                 </table>
