@@ -6,7 +6,7 @@ namespace DotNet_OneToMany_Demo.Models
     {
         [Key]
         public int PlayerId { get; set; }
-        public string FirstName { get; set; }
+        public string? FirstName { get; set; }
         public string LastName { get; set; }
         public int TeamId { get; set; }
         public Team CurrentTeam { get; set; }
