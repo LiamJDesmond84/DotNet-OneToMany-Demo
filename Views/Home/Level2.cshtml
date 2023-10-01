@@ -89,9 +89,9 @@
                 <h3>American Conference of Amateur Football with last name "Lopez"</h3>
                 <table class="table table-striped">
                     <tr>
-                        <th>Team Id</th>
-                        <th>Team Name</th>
-                        <th>League Id</th>
+                        <th>Player Id</th>
+                        <th>Player First Name</th>
+                        <th>Player Last Name</th>
                     </tr>
                     @foreach (var x in ViewBag.Lopez)
                     {
@@ -112,9 +112,9 @@
                 <h3>All Football Players</h3>
                 <table class="table table-striped">
                     <tr>
-                        <th>Team Id</th>
-                        <th>Team Name</th>
-                        <th>League Id</th>
+                        <th>Player Id</th>
+                        <th>Player First Name</th>
+                        <th>Player Last Name</th>
                     </tr>
                     @foreach (var x in ViewBag.AllFootball)
                     {
@@ -142,7 +142,7 @@
                     @foreach (var x in ViewBag.TeamSophia)
                     {
                         <tr>
-                            <td>@x.PlayerId</td>
+                            <td>@x.TeamId</td>
                             <td>@x.FirstName</td>
                             <td>@x.LastName</td>
                         </tr>
