@@ -55,7 +55,7 @@ public class HomeController : Controller
         ViewBag.TeamSophia = _context.Teams.Where(x => x.CurrentPlayers.Any(x => x.FirstName.Contains("Sophia"))).ToList();
         ViewBag.LeagueSophia = _context.Leagues.Where(x => x.Teams.Any((x => x.CurrentPlayers.Any(x => x.FirstName.Contains("Sophia"))))).ToList();
 
-        ViewBag.LopezNotRough = _context.Players.Where(x => x.LastName.Contains("Lopez")).Where(x => x.CurrentTeam.TeamName.Contains("RoughRiders")).ToList();
+        ViewBag.LopezNotRough = _context.Players.Where(x => x.LastName.Contains("Lopez")).Where(x => !x.CurrentTeam.TeamName.Contains("RoughRiders")).ToList();
 
 
 
