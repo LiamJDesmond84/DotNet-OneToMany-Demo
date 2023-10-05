@@ -65,6 +65,8 @@ public class HomeController : Controller
     [HttpGet("level_3")]
     public IActionResult Level3()
     {
+        ViewBag.SamEvans = _context.Teams.Where(x => x.AllPlayers.Contains("Samuel Evans")).ToList();
+
         return View();
     }
 
