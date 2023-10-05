@@ -12,4 +12,28 @@
             <li>...all players, sorted by the number of teams they've played for</li>
         </ol>
     </div>
+
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h3>Teams that Samuel Evans has played on</h3>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Player Id</th>
+                        <th>Player First Name</th>
+                        <th>Player Last Name</th>
+                        <th>Current Team</th>
+                    </tr>
+                    @foreach (var x in ViewBag.SamEvans)
+                    {
+                        <tr>
+                            <td>@x.PlayerId</td>
+                            <td>@x.FirstName</td>
+                            <td>@x.LastName</td>
+                        </tr>
+                    }
+                </table>
+            </div>
+        </div>
+    </div>
 </div>
