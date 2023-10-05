@@ -67,7 +67,7 @@ public class HomeController : Controller
     {
 
 
-        ViewBag.SamEvans = _context.Teams.Where(x => x.AllPlayers.Any(y => y.PlayerId.Equals(1))).ToList();
+        ViewBag.SamEvans = _context.Teams.Where(x => x.AllPlayers.Any(y => y.PlayerOnTeam.FirstName.Contains("Evans"))).ToList();
 
         return View();
     }
